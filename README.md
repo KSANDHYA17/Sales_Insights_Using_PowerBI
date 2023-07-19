@@ -46,7 +46,7 @@ and transactions.market_code="Mark001";`
 
 1. Formula to create norm_sales_amount column
 
-`= Table.AddColumn(#"Filtered Rows", "norm_sales_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount])`
+`= Table.AddColumn(#"Filtered Rows", "norm_sales_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*82 else [sales_amount])`
 
 
 
